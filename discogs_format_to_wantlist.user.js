@@ -67,6 +67,7 @@ countries = [
   'Barbados',
   'Jamaica',
   'Taiwan'
+  'Unknown'
 ];
 function Add_Format($albumformat)
 {
@@ -78,6 +79,8 @@ function Add_Format($albumformat)
       var release = $(this).closest('tr');
       countries.some(function (country) {
         if (release.find('td.country').children('span').text().indexOf('checazzo') == - 1) {
+          console.log(release)
+          console.log("clicking button")
           release.find('td.actions li.add_to_wantlist').trigger('mouseover').trigger('click');
           return true;
         }
