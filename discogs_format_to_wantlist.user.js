@@ -67,7 +67,6 @@ countries = [
   'Barbados',
   'Jamaica',
   'Taiwan'
-  'Unknown'
 ];
 function Add_Format($albumformat)
 {
